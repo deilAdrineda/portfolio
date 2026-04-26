@@ -48,3 +48,28 @@ document.addEventListener("DOMContentLoaded", () => {
   cards.forEach(card => observer.observe(card));
 
 });
+
+// PREVIEW IMAGES FOR PROJECTS AND WAHTNOT V1
+const previewImages = document.querySelectorAll(".project-image");
+const imageViewer = document.getElementById("imageViewer");
+const viewerImage = document.getElementById("viewerImage");
+const closeBtn = imageViewer.querySelector(".closeViewer");
+
+previewImages.forEach(imageBox => {
+  imageBox.addEventListener("click", () => {
+    const img = imageBox.querySelector("img");
+
+    imageViewer.classList.add("active");
+    viewerImage.src = img.src;
+  });
+});
+
+closeViewer.addEventListener("click", () => {
+  imageViewer.classList.remove("active");
+});
+
+imageViewer.addEventListener("click", (e) => {
+  if (e.target === imageViewer) {
+    imageViewer.classList.remove("active");
+  }
+});

@@ -36,8 +36,7 @@
           <h3>Web Developer</h3>
 
           <p class="description">
-            I build web and mobile applications using PHP, MySQL, HTML, CSS,
-            JavaScript, and Ionic.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente in, excepturi aspernatur minima nihil ab voluptatem molestias vero facilis velit! Rem non consectetur qui ex eum possimus beatae fugiat iusto?
           </p>
 
           <div class="home-buttons">
@@ -57,11 +56,11 @@
       <section id="about" class="section">
         <div class="section-card">
           <h2>About Me</h2>
-          <p>
+          <!-- <p>
             I am a 4th Year BSIT student majoring in Web Systems Technology. I
             have experience building web-based systems with dashboards, CRUD
             functionalities, role-based access, and database handling.
-          </p>
+          </p> -->
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
             eaque sint ipsum id repellendus! Exercitationem repudiandae
@@ -91,31 +90,98 @@
           <h2>Projects</h2>
 
           <div class="project-grid">
+
+            <!-- RKMS -->
             <div class="project-card">
-              <h3>Clinic Record Management System</h3>
-              <p>
-                A web-based system for managing patient records, services,
-                dashboards, and role-based access.
-              </p>
-              <p class="tech">PHP • MySQL • HTML • CSS • JavaScript</p>
+
+              <div class="project-image">
+                <img src="assets/images/stalbertrkms/rkmsadmin.png" alt="St Albert RKMS" class="preview-img">
+                <div class="image-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <h3>St. Albert RKMS</h3>
+
+                <p>
+                  A web-based clinic record management system designed to digitalize patient records and streamline service workflows.
+                </p>
+
+                <ul>
+                  <li>Patient record management</li>
+                  <li>Service availing module</li>
+                  <li>Role-based dashboards</li>
+                </ul>
+
+                <p class="tech">PHP • MySQL • HTML • CSS • JavaScript</p>
+
+                <div class="project-links">
+                  <a href="#" target="_blank">GitHub</a>
+                  <a href="#" target="_blank">Demo</a>
+                </div>
+              </div>
             </div>
 
+            <!-- BlotterTrack -->
             <div class="project-card">
-              <h3>Mobile Recipe App</h3>
-              <p>
-                A mobile app for browsing recipes with search, favorites, and
-                recipe detail features.
-              </p>
-              <p class="tech">Ionic • Angular</p>
+
+              <div class="project-image">
+                <img src="assets/images/blottertrack/blottertable.png" alt="BlotterTrack" class="preview-img">
+                <div class="image-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              
+              <div class="project-info">
+                <h3>BlotterTrack</h3>
+
+                <p>
+                  A system for managing and tracking blotter records with efficient search and organization features.
+                </p>
+
+                <ul>
+                  <li>Record tracking system</li>
+                  <li>Search and filtering</li>
+                  <li>Structured data storage</li>
+                </ul>
+
+                <p class="tech">JAVA • MySQL</p>
+
+                <div class="project-links">
+                  <a href="#" target="_blank">GitHub</a>
+                </div>
+              </div>
             </div>
 
+            <!-- Cuppa & Crumb -->
             <div class="project-card">
-              <h3>Greenville Cars App</h3>
+              
+              <div class="project-image">
+                <img src="assets/images/cuppacrumb/cuppacrumb.png" alt="Cuppa and Crumb" class="preview-img">
+                <div class="image-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <h3>Cuppa & Crumb</h3>
+
               <p>
-                A mobile app that displays vehicle brands and car information
-                using structured navigation.
+                A mobile application showcasing coffee recipes with a clean UI and local data storage.
               </p>
-              <p class="tech">Ionic • Angular</p>
+
+              <ul>
+                <li>Recipe browsing</li>
+                <li>Mobile-first design</li>
+                <li>SQLite local database</li>
+              </ul>
+
+              <p class="tech">Ionic • Angular • SQLite</p>
+
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
@@ -141,6 +207,11 @@
         </a>
       </div>
     </footer>
+    
+    <div class="image-viewer" id="imageViewer">
+      <span class="close-viewer" id="closeViewer">&times;</span>
+      <img src="" alt="Project Screenshot" id="viewerImage">
+    </div>
 
     <script src="main.js"></script>
   </body>
